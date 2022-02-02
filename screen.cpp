@@ -10,7 +10,7 @@ Screen::Screen(QWidget* parent) :
     m_vmouse(m_pixmap)
 {
     setMouseTracking(true);
-    setCursor(m_vmouse);
+    //setCursor(m_vmouse);
     setStyleSheet(" background-color: green; ");
 
     tstbtn = new QPushButton("Click me", this);

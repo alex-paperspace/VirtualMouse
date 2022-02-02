@@ -3,8 +3,12 @@
 #include <QPainter>
 
 VirtualMouse::VirtualMouse(QPixmap const& pixmap) :
-    QCursor(pixmap, 0, 0)
+    m_pixmap(pixmap)
 {
 
+
+}
+
+VirtualMouse::~VirtualMouse() {
 
 }

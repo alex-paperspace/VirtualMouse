@@ -6,12 +6,14 @@
 #include <QPixmap>
 #include <QIcon>
 
-class VirtualMouse : public QCursor
-{
+class VirtualMouse : public QObject {
+    Q_OBJECT
+
+    QPixmap m_pixmap;
 
 public:
     VirtualMouse(QPixmap const& pixmap);
-    ~VirtualMouse() {}
+    ~VirtualMouse();
 };
 
 #endif // VIRTUALMOUSE_H
